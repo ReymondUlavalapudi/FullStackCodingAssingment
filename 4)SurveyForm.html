@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="5)SurveyForm.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="survey-form">
+        <form id="surveyForm">
+            <h1>Customer Survey Form</h1>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+
+            <label for="country">Country:</label>
+            <select id="country" required>
+                <option value="">--Select--</option>
+                <option value="country1">Country 1</option>
+                <option value="country2">Country 2</option>
+                <option value="country2">Country 3</option>
+                <option value="country2">Country 4</option>
+                <option value="country2">Country 5</option>
+               
+            </select>
+            <label>Gender:</label>
+
+            <label for="male">Male &nbsp &nbsp &nbsp &nbsp<input type="radio" id="male" name="gender" value="male"></label>
+
+            <label for="female">Female &nbsp &nbsp <input type="radio" id="female" name="gender" value="female"></label>
+
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="number" id="mobile" required>
+
+            
+            <div class="buttons">
+                <button type="button" onclick="submitForm()">Submit</button>
+                <button type="button" onclick="resetForm()">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="popup" id="resultPopup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Survey Form Results</h2>
+            <div id="popupResult"></div>
+        </div>
+    </div>
+
+    <script src="6)SurveyForm.js"></script>
+</body>
+</html>
